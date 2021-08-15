@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Crear Cuenta</title>
+</head>
+<body>
+
+	<div class="navegador">
+		<ul class="listaNavegador">
+			<li> <a href="#"> Noticias </a> </li>
+			<li> <a href="Planes.html"> Planes </a> </li>
+			<li> <a href="index.html"> <img src="../Img/chad.jpeg" alt="Imagen_GigaChad" width="200px" class="IconoPag"> </a> </li>
+			<li> <a href="#"> Reservas </a> </li>
+			<li> <a href="#"> Bioseguridad </a> </li>
+			<li> <a href="Login.html"> Ingresar </a> </li>
+		</ul>
+	</div>
+
+	<div class="ImgLateral">
+		<img src="../Img/LateralCrear.jpeg" width="450px">
+	</div>
+
+	<div class="TituloCrear">
+		<h1> Crear Cuenta </h1>
+		<p> ¿Ya tienes cuenta? <a href="Login.html"> Ingresar Ahora </a> </p>
+	</div>
+
+	<div class="EspacioCrear">
+		<label for="Nombres"> Nombres </label> <br>
+		<input type="text" id="Nombres" name="Nombres"> <br> <br> 
+
+		<label for="Apellidos"> Apellidos </label> <br> 
+		<input type="text" id="Apellidos" name="Apellidos"> <br> <br>
+
+		<label for="Nacimiento"> Fecha de nacimiento </label> <br>
+		<input type="date" name="Nacimiento" id="Nacimiento"> <br> <br>
+
+		<label id="Tipo"> TIPO </label>
+		<select id="Tipo" name="Tipo">
+			<option></option>
+			<option value="Cedula de Ciudadania"> C.C. Cedula de Ciudadania </option>
+			<option value="Cedula de Extranjeria"> C.E. Cedula de Extranjeria </option>
+			<option value="Tarjeta de Identidad"> T.I. Tarjeta de Identidad </option>
+		</select>
+
+		<label for="Documento"> Documento </label>
+		<input type="number" id="Documento" name="Documento"> <br> <br>
+
+		<label for="Telefono"> Numero de Telefono </label> <br>
+		<input type="number" id="Telefono" name="Telefono"> <br> <br>
+
+		<label for="Correo Electronico"> Correo Electronico </label> <br>
+		<input type="email" id="Correo Electronico" name="Correo Electronico"> <br> <br>
+
+		<label for="ContraseñaInicio"> Contraseña </label> <br>
+		<input type="password" id="ContraseñaInicio" name="ContraseñaInicio"> <br> <br>
+
+		<input type="checkbox" id="Condiciones" name="Condiciones">
+		<label for="Condiciones"> Accepto los terminos y condiciones </label> <br> <br>
+
+		<input type="Submit" value="CREAR CUENTA">
+
+	</div>
+
+</body>
+</html>

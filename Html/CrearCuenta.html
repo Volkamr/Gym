@@ -7,13 +7,15 @@
 <body>
 
 	<div class="navegador">
-		<ul class="listaNavegador">
-			<li> <a href="#"> Noticias </a> </li>
+		<ul>
+			<li> <a href="../index.html"> Home </a> </li>
 			<li> <a href="Planes.html"> Planes </a> </li>
-			<li> <a href="../index.html"> <img src="../Img/Chad.jpeg" alt="Imagen_GigaChad" width="200px" class="IconoPag"> </a> </li>
-			<li> <a href="#"> Reservas </a> </li>
-			<li> <a href="#"> Bioseguridad </a> </li>
-			<li> <a href="Login.html"> Ingresar </a> </li>
+			<li> <a href="Reservas.html"> Reservas </a> </li>
+			<li> <a href="Bioseguridad.html"> Bioseguridad </a> </li>
+			<li> <a href="Noticias.html"> Noticias </a> </li>
+			<li> <a href="Gymchat.html"> Nosotros </a> </li>
+			<li> <a href="gym5.html"> Chat </a> </li>
+			<a href="Login.html" class="boton"> Ingresar </a> </li>
 		</ul>
 	</div>
 
@@ -21,10 +23,11 @@
 		<img src="../Img/LateralCrear.jpeg" width="450px">
 	</div>
 
-	<div class="TituloCrear">
-		<h1> Crear Cuenta </h1>
-		<p> ¿Ya tienes cuenta? <a href="Login.html"> Ingresar Ahora </a> </p>
-	</div>
+	<div class="contenido">
+		<div class="TituloCrear">
+			<h1> Crear Cuenta </h1>
+			<p> ¿Ya tienes cuenta? <a href="Login.html"> Ingresar Ahora </a> </p>
+		</div>
 
 	<div class="EspacioCrear">
 		<label for="Nombres"> Nombres </label> <br>
@@ -36,9 +39,8 @@
 		<label for="Nacimiento"> Fecha de nacimiento </label> <br>
 		<input type="date" name="Nacimiento" id="Nacimiento"> <br> <br>
 
-		<label id="Tipo"> TIPO </label>
-		<select id="Tipo" name="Tipo">
-			<option></option>
+		<label for="Tipo"> TIPO </label> <br>
+		<select id="Tipo" name="Tipo" class="select">
 			<option value="Cedula de Ciudadania"> C.C. Cedula de Ciudadania </option>
 			<option value="Cedula de Extranjeria"> C.E. Cedula de Extranjeria </option>
 			<option value="Tarjeta de Identidad"> T.I. Tarjeta de Identidad </option>
@@ -56,11 +58,30 @@
 		<label for="ContraseñaInicio"> Contraseña </label> <br>
 		<input type="password" id="ContraseñaInicio" name="ContraseñaInicio"> <br> <br>
 
+	</div>
+
+	<div class="Terminos">
 		<input type="checkbox" id="Condiciones" name="Condiciones">
 		<label for="Condiciones"> Accepto los terminos y condiciones </label> <br> <br>
+	</div>
 
-		<input type="Submit" value="CREAR CUENTA">
+	<input type="Submit" value="CREAR CUENTA" class="CrearCuenta">
+		
+	</div>
 
+	<div class="datos">
+		<div class="bottom">
+		<ul>
+			<li> <img src="../Img/Chad.png" alt="Imagen_GigaChad" width="100px"> </li>
+			<li> <img src="../Img/Wh.png" alt="Wh_icon" width="40px" class="contactos"> </li>
+			<li> <p>########</p> </li>
+			<li> <img src="../Img/Email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
+			<li> <p>Correo@outlook.com</p> </li>
+			<a href="#"> <img src="../Img/Face.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../Img/Insta.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../Img/Yt.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
+		</ul>
+		</div>
 	</div>
 
 </body>

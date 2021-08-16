@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patrick+Hand&display=swap');
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.navegador ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+.navegador li{
+	float: left;
+}
+
+.navegador li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.navegador li a:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.boton{
+	background-color: #d9ab57;
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.boton:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.visualP{
+	position: relative;
+}
+
+.visualP img{
+	width: 100%;
+	border-radius: 3px;
+}
+
+.visualP div{
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	padding: 5px;
+	margin: 5px;
+}
+
+.visualP div p{
+	display: inline;
+	color: white;
+	font-size: 18px;
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+}
+
+.visualP div h1{
+	color: #d9ab57;
+	text-align: center;
+	font-size: 40px;
+	margin: 4px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.Presentacion{
+	position: relative;
+}
+
+.Presentacion h1{
+	color: #d9ab57;
+	text-align: center;
+	font-size: 36px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-family: 'Patrick Hand', cursive;
+}
+
+.Presentacion p{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 45px;
+	font-family: 'Playfair Display', serif;
+}
+
+.CajaPresentacion{
+	position: absolute;
+	left: 15.5%;
+	width: 15%;
+	background-color: 	#f2ece4;
+	border-radius: 5px;
+	padding: 10px 10px;
+	height: 330px;
+}
+
+.CajaPresentacion img{
+	margin-top: 10px;
+	margin-left: 40px;
+	width: 150px;
+}
+
+.CajaPresentacion h2{
+	text-align: center;
+	font-family: 'Patrick Hand', cursive;
+	color: #d9ab57;
+	font-size: 25px;
+	margin: 10px;
+}
+
+.CajaPresentacion p{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.CajaPresentacion2{
+	position: absolute;
+	left: 41%;
+	width: 15%;
+	border-radius: 5px;
+	padding: 10px 10px;
+	background-color: 	#f2ece4;
+	height: 330px;
+}
+
+.CajaPresentacion2 img{
+	margin-left: 40px;
+	width: 150px;
+	margin-top: 10px;
+}
+
+.CajaPresentacion2 h2{
+	text-align: center;
+	font-family: 'Patrick Hand', cursive;
+	color: #d9ab57;
+	font-size: 25px;
+	margin: 10px;
+}
+
+.CajaPresentacion2 p{
+	font-size: 16px;
+	text-align: center;
+	margin: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+
+.CajaPresentacion3{
+	position: absolute;
+	left: 66%;
+	width: 15%;
+	background-color: 	#f2ece4;
+	border-radius: 5px;
+	padding: 10px 10px;
+	height: 330px;
+}
+
+.CajaPresentacion3 img{
+	margin-left: 40px;
+	margin-top: 10px;
+	width: 150px;
+}
+
+.CajaPresentacion3 h2{
+	text-align: center;
+	font-family: 'Patrick Hand', cursive;
+	color: #d9ab57;
+	font-size: 25px;
+	margin: 10px;
+}
+
+.CajaPresentacion3 p{
+	font-size: 16px;
+	text-align: center;
+	margin: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.CajaPresentacion:hover{
+	border: 2px solid #333;
+}
+
+.CajaPresentacion2:hover{
+	border: 2px solid #333;
+}
+
+.CajaPresentacion3:hover{
+	border: 2px solid #333;
+}
+
+
+.datos{
+	position: relative;
+	top: 420px;
+}
+
+
+.boton2{
+	background-color: #e0d3c4;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 8px 10px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: 'Playfair Display', serif;
+	margin-top: 20px;
+}
+
+.boton2:hover{
+	background-color: #f2ece4;
+	color: black;
+	font-size: 16px;
+}
+
+.bottom ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+.bottom li{
+	color: white;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 5px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.contactos{
+	margin-top: 25px;
+}
+
+.bottom li p{
+	margin-top: 33px;
+}

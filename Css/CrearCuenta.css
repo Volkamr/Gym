@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patrick+Hand&display=swap');
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.navegador ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+.navegador li{
+	float: left;
+}
+
+.navegador li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.navegador li a:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.boton{
+	background-color: #d9ab57;
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.boton:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.ImgLateral{
+	float: right;
+	margin: 11.5% 8%;
+}
+
+.ImgLateral img{
+	border-radius: 5px;
+	width: 540px;
+}
+
+.contenido{
+	width: 50%;
+	padding: 15px;
+	position: inherit;
+	margin: 2% 5%;
+}
+
+.TituloCrear{
+	text-align: center;
+}
+
+.TituloCrear h1{
+	color: #d9ab57;
+	font-size: 36px;
+	font-family: 'Patrick Hand', cursive;
+	margin-bottom: 0px;
+}
+
+.TituloCrear p{
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.TituloCrear a{
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	text-decoration: none;
+	color: #d9ab57;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.EspacioCrear{
+	padding: 10px 47px;
+	margin-bottom: 0;
+}
+
+.EspacioCrear label{
+	font-family: 'Playfair Display', serif;
+}
+
+.EspacioCrear input{
+	margin-top: 10px;
+	margin-bottom: 8px;
+	width: 510px;
+	height: 25px;
+}
+
+.EspacioCrear input:hover{
+	border-bottom-color: #d9ab57;
+}
+
+.select{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 516px;
+	height: 25px;
+}
+
+.Terminos{
+	width: 516px;
+}
+
+.Terminos input{
+	width: 17px;
+	height: 17px;
+	margin-left: 160px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.Terminos label{
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 15px;
+}
+
+.CrearCuenta{
+	width: 250px;
+	height: 50px;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+	background-color: #d9ab57;
+	color: white;
+	font-size: 17px;
+	margin-left: 160px;
+}
+
+.CrearCuenta:hover{
+	border-bottom-color: #d9ab57;
+	color: black;
+	background-color: #e0d3c4;
+}
+
+.boton2{
+	background-color: #e0d3c4;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 8px 10px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: 'Playfair Display', serif;
+	margin-top: 20px;
+}
+
+.boton2:hover{
+	background-color: #f2ece4;
+	color: black;
+	font-size: 16px;
+}
+
+.bottom ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+.bottom li{
+	color: white;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 5px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.contactos{
+	margin-top: 25px;
+}
+
+.bottom li p{
+	margin-top: 33px;
+}

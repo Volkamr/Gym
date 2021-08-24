@@ -3,25 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Reservas</title>
+	<link rel="stylesheet" type="text/css" href="../css/reservas.css">
 </head>
 <body>
 
 	<div class="navegador">
 		<ul>
 			<li> <a href="../index.html"> Home </a> </li>
-			<li> <a href="Planes.html"> Planes </a> </li>
-			<li> <a href="Reservas.html"> Reservas </a> </li>
-			<li> <a href="Bioseguridad.html"> Bioseguridad </a> </li>
-			<li> <a href="Noticias.html"> Noticias </a> </li>
-			<li> <a href="Gymchat.html"> Nosotros </a> </li>
-			<li> <a href="gym5.html"> Chat </a> </li>
-			<a href="Login.html" class="boton"> Ingresar </a> </li>
+			<li> <a href="planes.html"> Planes </a> </li>
+			<li> <a href="reservas.html"> Reservas </a> </li>
+			<li> <a href="bioseguridad.html"> Bioseguridad </a> </li>
+			<li> <a href="noticias.html"> Noticias </a> </li>
+			<li> <a href="gym_chat.html"> Nosotros </a> </li>
+            <li> <a href="gym5.html"> Chat </a> </li>
+			<a href="login.html" class="boton"> Ingresar </a> </li>
 		</ul>
 	</div>
 
 	<div class="Principal">
-		<h1> Titulo </h1>
-		<h2> Subtitulo </h2>
+		<h1> Reservaciones </h1>
+		<h2> Realiza reservaciones en los espacios de nuestras instalaciones </h2>
 	</div>
 
 	<div class="Configuracion">
@@ -57,12 +58,13 @@
 		</select>
 	</div>
 
-	<div class="CasillaDias">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="content" >
+		<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -82,8 +84,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -103,70 +105,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-
-	<div class="CasillaDias2">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias3">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -186,8 +136,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -207,70 +157,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-
-	<div class="CasillaDias4">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias5">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -290,8 +188,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -311,70 +209,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-
-	<div class="CasillaDias6">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-		<div class="CasillaDias">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -394,8 +240,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -415,18 +261,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias2">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -446,8 +292,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -467,18 +313,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias3">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -498,8 +344,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -519,18 +365,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias4">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -550,8 +396,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -571,18 +417,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias5">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -602,8 +448,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -623,18 +469,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias6">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -654,8 +500,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -675,69 +521,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-		<div class="CasillaDias">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias2">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -757,8 +552,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -778,18 +573,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias3">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -809,8 +604,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -830,18 +625,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias4">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -861,8 +656,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -882,18 +677,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias5">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -913,8 +708,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -934,18 +729,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias6">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -965,8 +760,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -986,69 +781,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-		<div class="CasillaDias">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias2">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1068,8 +812,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1089,18 +833,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias3">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1120,8 +864,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1141,18 +885,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias4">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1172,8 +916,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1193,18 +937,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias5">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1224,8 +968,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1245,18 +989,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias6">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1276,8 +1020,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1297,69 +1041,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-		<div class="CasillaDias">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias2">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1379,8 +1072,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1400,18 +1093,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias3">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1431,8 +1124,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1452,18 +1145,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias4">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1483,8 +1176,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1504,18 +1197,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias5">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1535,8 +1228,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1556,18 +1249,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias6">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1587,8 +1280,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1608,69 +1301,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
-
-	</div>
-		<div class="CasillaDias">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
-
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
-			<option value="5"> 5 </option>
-			<option value="6"> 6 </option>
-			<option value="7"> 7 </option>
-			<option value="8"> 8 </option>
-			<option value="9"> 9 </option>
-			<option value="10"> 10 </option>
-			<option value="11"> 11 </option>
-			<option value="12"> 12 </option>
-			<option value="13"> 13 </option>
-			<option value="14"> 14 </option>
-			<option value="15"> 15 </option>
-			<option value="16"> 16 </option>
-			<option value="17"> 17 </option>
-			<option value="18"> 18 </option>
-			<option value="19"> 19 </option>
-			<option value="20"> 20 </option>
-			<option value="21"> 21 </option>
-		</select>
-
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias2">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1690,8 +1332,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1711,18 +1353,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias3">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1742,8 +1384,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1763,18 +1405,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias4">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1794,8 +1436,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1815,18 +1457,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias5">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1846,8 +1488,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1867,18 +1509,18 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
 
 	</div>
 
-	<div class="CasillaDias6">
-		<label for="Agendado"> Nombre </label>
-		<input type="text" id="Agendado" name="Agendado">
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
 
-		<label for="HoraInicio"> Hora de Inicio </label>
-		<select id="HoraInicio" name="HoraInicio">
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1898,8 +1540,8 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<label for="HoraFin"> Hora de Fin </label>
-		<select id="HoraFin" name="HoraFin">
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
 			<option value="5"> 5 </option>
 			<option value="6"> 6 </option>
 			<option value="7"> 7 </option>
@@ -1919,9 +1561,63 @@
 			<option value="21"> 21 </option>
 		</select>
 
-		<input type="Submit" value="Guardar">
-		<input type="Submit" value="Borrar">
-		<input type="Submit" value="Editar">
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
+
+	</div>
+
+	<div class="reservas" >
+		<label for="Agendado" class="nombre"> Nombre </label>
+		<input type="text" id="Agendado" name="Agendado"> <br>
+
+		<label for="HoraInicio" class="hora"> Inicio </label>
+		<select id="HoraInicio" name="HoraInicio" class="tiempo">
+			<option value="5"> 5 </option>
+			<option value="6"> 6 </option>
+			<option value="7"> 7 </option>
+			<option value="8"> 8 </option>
+			<option value="9"> 9 </option>
+			<option value="10"> 10 </option>
+			<option value="11"> 11 </option>
+			<option value="12"> 12 </option>
+			<option value="13"> 13 </option>
+			<option value="14"> 14 </option>
+			<option value="15"> 15 </option>
+			<option value="16"> 16 </option>
+			<option value="17"> 17 </option>
+			<option value="18"> 18 </option>
+			<option value="19"> 19 </option>
+			<option value="20"> 20 </option>
+			<option value="21"> 21 </option>
+		</select>
+
+		<label for="HoraFin" class="hora"> Fin </label>
+		<select id="HoraFin" name="HoraFin" class="tiempo">
+			<option value="5"> 5 </option>
+			<option value="6"> 6 </option>
+			<option value="7"> 7 </option>
+			<option value="8"> 8 </option>
+			<option value="9"> 9 </option>
+			<option value="10"> 10 </option>
+			<option value="11"> 11 </option>
+			<option value="12"> 12 </option>
+			<option value="13"> 13 </option>
+			<option value="14"> 14 </option>
+			<option value="15"> 15 </option>
+			<option value="16"> 16 </option>
+			<option value="17"> 17 </option>
+			<option value="18"> 18 </option>
+			<option value="19"> 19 </option>
+			<option value="20"> 20 </option>
+			<option value="21"> 21 </option>
+		</select>
+
+		<input type="Submit" value="Guardar" class="accion">
+		<input type="Submit" value="Borrar" class="accion">
+		<input type="Submit" value="Editar" class="accion">
+
+	</div>
 
 	</div>
 
@@ -1929,14 +1625,14 @@
 	<div class="datos">
 		<div class="bottom">
 		<ul>
-			<li> <img src="../Img/Chad.png" alt="Imagen_GigaChad" width="100px"> </li>
-			<li> <img src="../Img/Wh.png" alt="Wh_icon" width="40px" class="contactos"> </li>
+			<li> <img src="../img/icono_de_meme_chad.png" alt="Imagen_GigaChad" width="100px"> </li>
+			<li> <img src="../img/icono_de_whatssapp.png" alt="Wh_icon" width="40px" class="contactos"> </li>
 			<li> <p>########</p> </li>
-			<li> <img src="../Img/Email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
+			<li> <img src="../img/icono_de_email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
 			<li> <p>Correo@outlook.com</p> </li>
-			<a href="#"> <img src="../Img/Face.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
-			<a href="#"> <img src="../Img/Insta.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
-			<a href="#"> <img src="../Img/Yt.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_de_facebook.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_instagram.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_de_youtube.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
 		</ul>
 		</div>
 	</div>

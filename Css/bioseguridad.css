@@ -54,110 +54,101 @@ body{
 	font-size: 16px;
 }
 
-.ImgLateral{
-	float: right;
-	margin: 11.5% 8%;
-}
-
-.ImgLateral img{
+.ImgBio{
+	float: left;
+	background-color: #e0d3c4;
+	margin: 3% 8%; 
 	border-radius: 5px;
-	width: 540px;
 }
 
-.contenido{
-	width: 50%;
-	padding: 15px;
-	position: inherit;
-	margin: 2% 5%;
+.ImgBio img{
+	margin: 2% 2%;
+	border-radius: 5px;
+	width: 500px;
 }
 
-.TituloCrear{
-	text-align: center;
+.TextoL{
+	width: 40%;
+	margin: 6% 10%;
+	padding: 10px;
+	position: absolute;
+	left: 38%;
 }
 
-.TituloCrear h1{
-	color: #d9ab57;
-	font-size: 36px;
+.TextoL H1{
 	font-family: 'Patrick Hand', cursive;
+	font-size: 40px;
+	color: #d9ab57;
+	text-align: center;
 	margin-bottom: 0px;
 }
 
-.TituloCrear p{
+.TextoL h2{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
 	font-size: 18px;
-	font-family: 'Playfair Display', serif;
-	margin-top: 0px;
-	margin-bottom: 30px;
-}
-
-.TituloCrear a{
-	font-size: 18px;
-	font-family: 'Playfair Display', serif;
-	text-decoration: none;
-	color: #d9ab57;
-	margin-top: 0px;
-	margin-bottom: 30px;
-}
-
-.EspacioCrear{
-	padding: 10px 47px;
-	margin-bottom: 0;
-}
-
-.EspacioCrear label{
-	font-family: 'Playfair Display', serif;
-}
-
-.EspacioCrear input{
 	margin-top: 10px;
-	margin-bottom: 8px;
-	width: 510px;
-	height: 25px;
+	margin-bottom: 50px;
 }
 
-.EspacioCrear input:hover{
-	border-bottom-color: #d9ab57;
-}
-
-.select{
-	margin-top: 10px;
-	margin-bottom: 20px;
-	width: 516px;
-	height: 25px;
-}
-
-.Terminos{
-	width: 516px;
-}
-
-.Terminos input{
-	width: 17px;
-	height: 17px;
-	margin-left: 160px;
-	margin-bottom: 15px;
-	margin-top: 10px;
-}
-
-.Terminos label{
+.TextoL p{
+	width: 80%;
+	padding: 10px;
+	margin-left: 50px;
 	font-family: 'Playfair Display', serif;
-	margin-bottom: 15px;
+	font-size: 16.5px;
 }
 
-.CrearCuenta{
-	width: 250px;
+.content{
+	position: relative;
+	overflow: hidden;
+}
+
+.botonI{
+	padding: 10px;
+	float: left;
+	margin-top: 50px;
+}
+
+.botonI input{
+	font-family: 'Playfair Display', serif;
+	width: 260px;
 	height: 50px;
-	margin-bottom: 10px;
-	font-family: 'Playfair Display', serif;
-	background-color: #d9ab57;
-	color: white;
-	font-size: 17px;
-	margin-left: 160px;
+	font-size: 15px;
+	background-color: #e0d3c4;
+	border-radius: 5px;
 }
 
-.CrearCuenta:hover{
-	border-bottom-color: #d9ab57;
-	color: black;
-	background-color: #e0d3c4;
+.botonI input:hover{
+	background-color: #d9ab57;
+	border-bottom: 4px solid #333;
 }
+
+.botonC{
+	padding: 10px;
+	float: right;
+	margin-top: 50px;
+}
+
+.botonC input{
+	font-family: 'Playfair Display', serif;
+	width: 260px;
+	height: 50px;
+	font-size: 15px;
+	background-color: #e0d3c4;
+	border-radius: 5px;
+}
+
+.botonC input:hover{
+	background-color: #d9ab57;
+	border-bottom: 4px solid #333;
+}
+
+.datos{
+	position: relative;
+	top: 10px;
+}
+
 
 .boton2{
 	background-color: #e0d3c4;

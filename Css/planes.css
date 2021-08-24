@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+.navegador ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+.navegador li{
+	float: left;
+}
+
+.navegador li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.navegador li a:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.boton{
+	background-color: #d9ab57;
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.boton:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.Lugar {
+	padding: 4%;
+	text-align: center;
+}
+
+.Lugar label{
+	margin: 6%;
+	margin-right: 2%;
+	color: #d9ab57;
+	font-family: font-family: 'Patrick Hand', cursive;
+	font-size: 40px;
+	border-radius: 5px;
+	padding: 8px;
+	text-align: center;
+}
+
+.Lugar label:hover{
+	border-bottom: 1px solid #d9ab57;
+	border-left: 2px solid #d9ab57;
+}
+
+.Lugar select{
+	width: 20%;
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	color: #333;
+}
+
+.Lugar select:hover{
+	border-bottom: 2px solid #d9ab57;
+}
+
+.Planes{
+	padding-top: 0px;
+	position: relative;
+}
+
+.op1{
+	padding: 1%;
+	width: 25%;
+	height: 882px;
+	border-radius: 5px;
+	position: absolute;
+	left: 5.5%;
+	background-color: #f2ece4;
+}
+
+.encabezado{
+	border-bottom: 3px solid #d9ab57;
+	padding: 30px;
+}
+
+.encabezado h2{
+	color: #d9ab57;
+	font-size: 30px;
+	margin: 0px;
+}
+
+.encabezado h3{
+	font-size: 38px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.encabezado p{
+	margin: 0px;
+	font-family: 'Playfair Display', serif;
+	display: inline;
+}
+
+.encabezado h4{
+	margin: 0px;
+	font-family: 'Dancing Script', cursive;
+	display: inline;
+}
+
+.op1 ul{
+	list-style-type: none;
+	padding: 6% 12%;
+}
+
+.op1 li{
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.op1 input{
+	width: 200px;
+	height: 50px;
+	color: white;
+	background-color: #d9ab57;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	margin-left: 25%;
+	margin-top: 94%;
+}
+
+.op1 input:hover{
+	color: black;
+	background-color: #e0d3c4;
+	font-family: 'Playfair Display', serif;
+}
+
+.op2{
+	padding: 1%;
+	width: 25%;
+	height: 882px;
+	border-radius: 5px;
+	position: absolute;
+	left: 36.5%;
+	background-color: #f2ece4;
+}
+
+.encabezado{
+	border-bottom: 3px solid #d9ab57;
+	padding: 30px;
+}
+
+.encabezado h2{
+	color: #d9ab57;
+	font-size: 30px;
+	margin: 0px;
+}
+
+.encabezado h3{
+	font-size: 38px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.encabezado p{
+	margin: 0px;
+	font-family: 'Playfair Display', serif;
+	display: inline;
+}
+
+.encabezado h4{
+	margin: 0px;
+	font-family: 'Dancing Script', cursive;
+	display: inline;
+}
+
+.op2 ul{
+	list-style-type: none;
+	padding: 6% 12%;
+}
+
+.op2 li{
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.op2 input{
+	width: 200px;
+	height: 50px;
+	color: white;
+	background-color: #d9ab57;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	margin-left: 25%;
+	margin-top: 35%;
+}
+
+.op2 input:hover{
+	color: black;
+	background-color: #e0d3c4;
+	font-family: 'Playfair Display', serif;
+}
+
+.op3{
+	padding: 1%;
+	width: 25%;
+	border-radius: 5px;
+	position: absolute;
+	left: 67.5%;
+	background-color: #f2ece4;
+}
+
+.encabezado{
+	border-bottom: 3px solid #d9ab57;
+	padding: 30px;
+}
+
+.encabezado h2{
+	color: #d9ab57;
+	font-size: 30px;
+	margin: 0px;
+}
+
+.encabezado h3{
+	font-size: 38px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.encabezado p{
+	margin: 0px;
+	font-family: 'Playfair Display', serif;
+	display: inline;
+}
+
+.encabezado h4{
+	margin: 0px;
+	font-family: 'Dancing Script', cursive;
+	display: inline;
+}
+
+.op3 ul{
+	list-style-type: none;
+	padding: 6% 12%;
+}
+
+.op3 li{
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.op3 input{
+	width: 200px;
+	height: 50px;
+	color: white;
+	background-color: #d9ab57;
+	font-family: 'Playfair Display', serif;
+	font-size: 18px;
+	margin-left: 25%;
+	margin-bottom: 15px;
+}
+
+.op3 input:hover{
+	color: black;
+	background-color: #e0d3c4;
+	font-family: 'Playfair Display', serif;
+}
+
+.datos{
+	position: relative;
+	top: 970px;
+}
+
+
+.boton2{
+	background-color: #e0d3c4;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 8px 10px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: 'Playfair Display', serif;
+	margin-top: 20px;
+}
+
+.boton2:hover{
+	background-color: #f2ece4;
+	color: black;
+	font-size: 16px;
+}
+
+.bottom ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+.bottom li{
+	color: white;
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 5px;
+	text-decoration: none;
+	border-radius: 2px;
+	font-family: 'Playfair Display', serif;
+}
+
+.contactos{
+	margin-top: 25px;
+}
+
+.bottom li p{
+	margin-top: 33px;
+}

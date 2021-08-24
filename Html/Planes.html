@@ -3,25 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title> Planes </title>
+	<link rel="stylesheet" type="text/css" href="../css/planes.css">
 </head>
 <body>
 
 	<div class="navegador">
 		<ul>
 			<li> <a href="../index.html"> Home </a> </li>
-			<li> <a href="Planes.html"> Planes </a> </li>
-			<li> <a href="Reservas.html"> Reservas </a> </li>
-			<li> <a href="Bioseguridad.html"> Bioseguridad </a> </li>
-			<li> <a href="Noticias.html"> Noticias </a> </li>
-			<li> <a href="Gymchat.html"> Nosotros </a> </li>
-			<li> <a href="gym5.html"> Chat </a> </li>
-			<a href="Login.html" class="boton"> Ingresar </a> </li>
+			<li> <a href="planes.html"> Planes </a> </li>
+			<li> <a href="reservas.html"> Reservas </a> </li>
+			<li> <a href="bioseguridad.html"> Bioseguridad </a> </li>
+			<li> <a href="noticias.html"> Noticias </a> </li>
+			<li> <a href="gym_chat.html"> Nosotros </a> </li>
+            <li> <a href="gym5.html"> Chat </a> </li>
+			<a href="login.html" class="boton"> Ingresar </a> </li>
 		</ul>
 	</div>
 
 	<div class="Lugar">
 		
-		<label for="Ciudad"> Ciudad </label> <br>
+		<label for="Ciudad"> Ciudad </label>
 		<select id="Ciudad" name="Ciudad">
 			<option value="Ciudad1"> Ciudad 1 </option>
 			<option value="Ciudad2"> Ciudad 2 </option>
@@ -29,9 +30,7 @@
 			<option value="Ciudad4"> Ciudad 4 </option>
 		</select>
 
-		<br> <br>
-
-		<label for="Sede"> Sede </label> <br>
+		<label for="Sede"> Sede </label>
 		<select id="Sede" name="Sede">
 			<option value="Sede1"> Sede 1 </option>
 			<option value="Sede2"> Sede 3 </option>
@@ -43,10 +42,16 @@
 	<div class="Planes">
 
 		<div class="op1">
-			<h2> Easy </h2>
-			<p> $39000 al Mes </p>
-			<p> Mantenimiento al anual $49900 </p>
-		 	<p> Inscripción $0 </p>
+
+			<div class="encabezado">
+				<h2> EASY </h2>
+				<h3> $39000 </h3>
+				<p> Mantenimiento al anual </p>
+				<h4> $49900 </h4> <br>
+		 		<p> Inscripción </p>
+		 		<h4> $0 </h4>
+			</div>
+			
 		 	<ul>
 		 		<li> Cuota de inscripción gratis </li>
 		 		<li> Zona cardio </li>
@@ -57,11 +62,15 @@
 		 	<input type="Submit" value="ESCOGER PLAN">
 		</div>
 
-		<div class="op1">
-		 	<h2> VIP </h2>
-			<p> $49000 al Mes </p>
-			<p> Mantenimiento al anual $49900 </p>
-		 	<p> Inscripción $0 </p>
+		<div class="op2">
+		 	<div class="encabezado">
+				<h2> VIP </h2>
+				<h3> $49000 </h3>
+				<p> Mantenimiento al anual </p>
+				<h4> $49900 </h4> <br>
+		 		<p> Inscripción </p>
+		 		<h4> $0 </h4>
+			</div>
 		 	<ul>
 		 		<li> Cuota de inscripción gratis </li>
 		 		<li> Zona cardio </li>
@@ -75,11 +84,15 @@
 		 	<input type="Submit" value="ESCOGER PLAN">
 		</div>
 
-		<div class="op2">
-		 	<h2> VIP ANUAL </h2>
-			<p> $49000 al Mes </p>
-			<p> Mantenimiento al anual $49900 </p>
-		 	<p> Inscripción $0 </p>
+		<div class="op3">
+		 	<div class="encabezado">
+				<h2> VIP ANUAL </h2>
+				<h3> $499000 </h3>
+				<p> Mantenimiento al anual </p>
+				<h4> $0 </h4> <br>
+		 		<p> Inscripción </p>
+		 		<h4> $0 </h4>
+			</div>
 		 	<ul>
 		 		<li> Valor del mes pagando el valor total de tu Plan VIP Anual por anticipado </li>
 		 		<li> Ahorra $ 149.700 al año. </li>
@@ -96,17 +109,17 @@
 		</div>
 	</div>
 
-	<<div class="datos">
+	<div class="datos">
 		<div class="bottom">
 		<ul>
-			<li> <img src="../Img/Chad.png" alt="Imagen_GigaChad" width="100px"> </li>
-			<li> <img src="../Img/Wh.png" alt="Wh_icon" width="40px" class="contactos"> </li>
+			<li> <img src="../img/icono_de_meme_chad.png" alt="Imagen_GigaChad" width="100px"> </li>
+			<li> <img src="../img/icono_de_whatssapp.png" alt="Wh_icon" width="40px" class="contactos"> </li>
 			<li> <p>########</p> </li>
-			<li> <img src="../Img/Email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
+			<li> <img src="../img/icono_de_email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
 			<li> <p>Correo@outlook.com</p> </li>
-			<a href="#"> <img src="../Img/Face.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
-			<a href="#"> <img src="../Img/Insta.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
-			<a href="#"> <img src="../Img/Yt.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_de_facebook.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_instagram.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_de_youtube.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
 		</ul>
 		</div>
 	</div>

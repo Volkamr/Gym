@@ -4,9 +4,8 @@
 	<meta charset="utf-8">
 	<title>Gym Chad</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <!--- Navegador Principal donde estaran las acciones de movimiento entre paginas -->
 <body>
 	<div class="navegador">
@@ -18,46 +17,56 @@
 			<li> <a href="html/noticias.html"> Noticias </a> </li>
 			<li> <a href="html/gym_chat.html"> Nosotros </a> </li>
 			<li> <a href="html/gym5.html"> Chat </a> </li>
-			<a href="html/login.html" class="boton"> Ingresar </a> </li>
+			<a href="html/login.html" class="boton"> Ingresar </a>
 		</ul>
 	</div>
 
-<!-- Primera imagen que deberia llevarse la mirada de cliente -->
 	<div class="visualP">
-		<img src="img/persona_haciendo_pesas_frente_a_un_espejo.jpg" alt="Imagen_GYM">
-		<div>
-			<h1> ENTRENA SIN ATADURAS </h1>
-			<p> Plan Libre </p>
-			<p> 39.000 al mes </p>
-		</div>
+
+			<picture>
+				 <source srcset="img/chica-gym.jpg" media="(max-width: 1245px)">
+				 <source srcset="img/persona_haciendo_pesas_frente_a_un_espejo.jpg">
+				 <img src="img/persona_haciendo_pesas_frente_a_un_espejo.jpg" alt="ImagenPrincipal">
+			</picture>
+
+			<div>
+				<h1> ENTRENA SIN ATADURAS </h1>
+				<p> Plan Libre </p>
+				<p> 39.000 al mes </p>
+			</div>
+
 	</div>
 
-<!-- Parte de la pagina en donde se presenta a la empresa -->
 	<div class="Presentacion">
-		<h1> ¿Por qué elegirnos? </h1>
-		<p> Somos el mejor gimnasio en Colombia en acondicionamiento</p>
+
+		<div>
+			<h1> ¿Por qué elegirnos? </h1>
+			<p> Somos el mejor gimnasio en Colombia en acondicionamiento</p>
+		</div>
+		
 		<div class="CajaPresentacion">
 			<img src="img/cicla_de_cardio_con_estrellas.png" alt="Imagen_Cardio">
 			<h2> Zona de Cardio</h2>
 			<p> No corras en una cancha, nuestras más de 100 maquinas de corres estan esperando por ti </p>
 		</div>
+
 		<div class="CajaPresentacion2">
 			<img src="img/imagen_pesas_con_estrellas.png" alt="Imagen_Pesas">
 			<h2> Zona de Musculación</h2>
-			<p> Encuentra en nuestaras instalaciones los mejores equipos para estañar tu fuerza y asegurar esas ganancias </p>
+			<p> Encuentra en nuestaras instalaciones los mejores equipos </p>
 		</div>
+
 		<div class="CajaPresentacion3">
 			<img src="img/persona_descansando_en_zen.png" alt="Imagen_Descanso">
 			<h2> Zona VIP</h2>
 			<p> Descansa en nuestros espacios especializados en la relajación y equilibrio mental </p>
 		</div>
+
 	</div>
 
-<!-- Parte de presentacion de datos -->
 	<div class="datos">
 		<div class="bottom">
 		<ul>
-			<li> <img src="img/icono_de_meme_chad.png" alt="Imagen_GigaChad" width="100px"> </li>
 			<li> <img src="img/icono_de_whatssapp.png" alt="Wh_icon" width="40px" class="contactos"> </li>
 			<li> <p>########</p> </li>
 			<li> <img src="img/icono_de_email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
@@ -69,8 +78,6 @@
 		</div>
 	</div>
 
-
-	
 
 </body>
 </html>

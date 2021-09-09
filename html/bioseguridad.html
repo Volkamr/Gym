@@ -10,7 +10,7 @@
 
 	<div class="navegador">
 		<ul>
-			<li> <a href="../index.html"> Home </a> </li>
+			<li> <a href="../index.html"> Home </a> <img src="../img/flecha_desplegable.png" class="toggle"> </li>
 			<li> <a href="planes.html"> Planes </a> </li>
 			<li> <a href="reservas.html"> Reservas </a> </li>
 			<li> <a href="bioseguridad.html"> Bioseguridad </a> </li>
@@ -28,7 +28,8 @@
 				<source srcset="../img/chica_con_tapabocas_sonriendo.jpg" media="(max-width: 1025px">
 				<img src="../img/chica_con_tapabocas_sonriendo.jpg">
 			</picture>
-	</div>
+			
+		</div>
 
 	<div class="TextoL">
 		<h1> Reglas Bioseguridad </h1>
@@ -55,12 +56,20 @@
 			<li> <p>########</p> </li>
 			<li> <img src="../img/icono_de_email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
 			<li> <p>Correo@outlook.com</p> </li>
-			<a href="#"> <img src="../img/icono_de_facebook.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
+			<a href="#"> <img src="../img/icono_de_facebook.png" alt="Facebook_Icon" width="50px" class="boton2"> </a>
 			<a href="#"> <img src="../img/icono_instagram.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
 			<a href="#"> <img src="../img/icono_de_youtube.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
 		</ul>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		const card = document.querySelector('.navegador');
+		const cardtoggle = document.querySelector('.toggle');
+		cardtoggle.onclick = function(){
+			card.classList.toggle('active');
+		}
+	</script>
 
 </body>
 </html>

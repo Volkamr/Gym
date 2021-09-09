@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patrick+Hand&display=swap');
 
 body{
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 }
 
 .navegador ul{
@@ -12,6 +12,7 @@ body{
 	padding: 3px;
 	background-color: #333;
 	overflow: hidden;
+	width: 99.58%;
 }
 
 .navegador li{
@@ -54,6 +55,27 @@ body{
 	font-size: 16px;
 }
 
+
+@media only screen and (max-width: 1309px) {
+  /* For mobile phones: */
+  .navegador li{
+    width: 100%;
+  }
+  .navegador{
+  	width: 99.59%;
+  }
+}
+
+@media only screen and (max-width: 1309px) {
+  /* For mobile phones: */
+  .navegador .boton{
+    width: 87%;
+    margin-right: 50px;
+  }
+
+}
+
+
 .ImgBio{
 	float: left;
 	background-color: #e0d3c4;
@@ -65,6 +87,24 @@ body{
 	margin: 2% 2%;
 	border-radius: 5px;
 	width: 500px;
+}
+
+@media only screen and (max-width: 1309px) {
+  /* For mobile phones: */
+  .ImgBio{
+  	float: none;
+  	margin: 0px;
+  	display: inline;
+  	width: 100%;
+  	display: inherit;
+  	padding: 1%;
+  }
+
+  .ImgBio Img{
+  	width: 100%;
+  	margin: 0px;
+  }
+
 }
 
 .TextoL{
@@ -112,7 +152,7 @@ body{
 
 .botonI input{
 	font-family: 'Playfair Display', serif;
-	width: 260px;
+	width: auto;
 	height: 50px;
 	font-size: 15px;
 	background-color: #e0d3c4;
@@ -132,7 +172,7 @@ body{
 
 .botonC input{
 	font-family: 'Playfair Display', serif;
-	width: 260px;
+	width: 230px;
 	height: 50px;
 	font-size: 15px;
 	background-color: #e0d3c4;
@@ -144,9 +184,61 @@ body{
 	border-bottom: 4px solid #333;
 }
 
+@media only screen and (max-width: 1309px) {
+  /* For mobile phones: */
+  .TextoL{
+  	position: relative;
+  	left: 0px;
+  	width: 100%;
+  	margin: 0px;
+  }
+
+  .TextoL h1{
+  	width: 96%;
+  	margin-top: 5%;
+  	font-size: 300%;
+  	text-align: center;
+  }
+
+  .TextoL h2{
+  	width: 80%;
+  	font-size: 120%;
+  	margin-left: 7.8%;
+  }
+
+  .TextoL p{
+  	margin-left: 7.8%;
+  	font-size: 110%;
+  }
+
+  .botonI{
+  	float: none;
+  	padding: 1%;
+  }
+
+  .botonI input{
+  	width: 80%;
+  	margin-left: 8%;
+  	font-size: 150%;
+  }
+
+  .botonC{
+  	float: none;
+  	padding: 1%;
+  	margin-top: 1%;
+  }
+
+  .botonC input{
+  	width: 80%;
+  	margin-left: 8%;
+  	font-size: 150%;
+  }
+
+}
+
 .datos{
 	position: relative;
-	top: 10px;
+	margin-top: 3%;
 }
 
 
@@ -183,6 +275,7 @@ body{
 	display: block;
 	text-align: center;
 	margin: 5px;
+	margin-left: 25px;
 	text-decoration: none;
 	border-radius: 2px;
 	font-family: 'Playfair Display', serif;
@@ -194,4 +287,60 @@ body{
 
 .bottom li p{
 	margin-top: 33px;
+}
+
+@media only screen and (max-width:1250px) {
+  /* For mobile phones: */
+  .datos{
+  	top: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  .bottom li{
+  	float: left;
+  }
+
+}
+
+@media only screen and (max-width:1250px) {
+  /* For mobile phones: */
+  .datos{
+    width: 100%;
+    height: auto;
+  }
+
+  .bottom li{
+  	float: none;
+  	height: auto;
+  	padding: 25px;
+  }
+
+  .bottom li img{
+  	width: 16%;
+  	margin: 40px;
+  	margin-top: 24px;
+  	float: left;
+  }
+
+  .bottom li p{
+  	font-size: 100%;
+  }
+
+  .bottom a{
+  	padding: 5px;
+  	display: inline-block;
+  	background-color: #e0d3c4;
+  	width: 95%;
+  	height: auto;
+  	border-radius: 5px;
+  	margin: 18px;
+  }
+
+  .boton2 {
+  	float: none;
+  	margin-left: 40%;
+  	width: 15%;
+  }
+
 }

@@ -72,6 +72,8 @@ body{
   }
   .navegador{
   	width: 99.59%;
+	height: 80px;
+  	overflow: hidden;
   }
 .toggle{
   	display: block;

@@ -56,7 +56,7 @@ body{
 }
 
 
-@media only screen and (max-width: 1309px) {
+@media only screen and (max-width: 1024px) {
   /* For mobile phones: */
   .navegador li{
     width: 100%;
@@ -70,7 +70,8 @@ body{
   /* For mobile phones: */
   .navegador .boton{
     width: 87%;
-    margin-right: 50px;
+    margin-right: 5%;
+    margin-left: 5.4%;
   }
 
 }
@@ -341,4 +342,4 @@ body{
   	margin-left: 40%;
   }
 
-}
+

@@ -64,6 +64,10 @@
 
 	</div>
 
+	<div class="bottomUp">
+		<p class="desplegable_down"> Contactos  <img src="../img/flecha_desplegable.png" class="toggledos"> </p>  
+	</div>
+	
 	<div class="datos">
 		<div class="bottom">
 		<ul>
@@ -83,6 +87,14 @@
 		const cardtoggle = document.querySelector('.toggle');
 		cardtoggle.onclick = function(){
 			card.classList.toggle('active');
+		}
+	</script>
+	
+	<script type="text/javascript">
+		const final = document.querySelector('.datos');
+		const finaltoggle = document.querySelector('.toggledos');
+		finaltoggle.onclick = function(){
+			final.classList.toggle('active');
 		}
 	</script>
 

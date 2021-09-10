@@ -31,7 +31,7 @@ body{
 }
 
 .toggle{
-	width: 20px;
+	width: 32px;
 	float: right;
 	margin-top: -40px;
 	margin-left: 5px;
@@ -77,10 +77,11 @@ body{
 
   .toggle{
   	display: block;
-  	margin-right: 35%;
+  	float: left;
+  	margin-left: 30%;
   	padding: 6px;
-  	margin-top: -48px;
-  	transition: 1s;
+  	margin-top: -55.7px;
+  	transition: 0.8s;
   }
 }
 
@@ -344,11 +345,11 @@ body{
   .toggledos{
   	float: left;
   	display: block;
-  	width: 20px;
+  	width: 32px;
   	padding: 5px;
-  	margin-top: -1%;
+  	margin-top: -2.6%;
   	transition: 1s;
-  	margin-left: 30%;
+  	margin-left: 28.5%;
   	margin-right: 5%;
   }
 
@@ -360,11 +361,13 @@ body{
 		font-family: 'Playfair Display', serif;
   	color: black;
   	padding: 5%;
+  	margin-top: 2.5%;
   }
 
   .bottomUp{
   	background-color:#d9ab57;
   	width: 100%;
+  	height: 80px;
   	padding: 2.5px;
   	margin: 0px;
   }

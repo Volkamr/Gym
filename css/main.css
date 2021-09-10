@@ -364,6 +364,18 @@ body{
 
 }
 
+.toggledos{
+	width: 20px;
+	float: right;
+	margin-top: -35px;
+	margin-left: 120px;
+	display: none;
+}
+
+.desplegable_down{
+	display: none;
+}
+
 @media only screen and (max-width:770px) {
   /* For mobile phones: */
   .datos{
@@ -401,5 +413,38 @@ body{
   	float: none;
   	margin-left: 40%;
   }
+	
+.toggledos{
+  	float: left;
+  	display: block;
+  	width: 20px;
+  	padding: 5px;
+  	margin-top: -1%;
+  	transition: 1s;
+  	margin-left: 30%;
+  	margin-right: 5%;
+  }
+
+  .desplegable_down{
+  	display: inline-block;
+  	text-align: left;
+  	font-size: 105%;
+  	width:90%;
+		font-family: 'Playfair Display', serif;
+  	color: black;
+  	padding: 5%;
+  }
+
+  .bottomUp{
+  	background-color:#d9ab57;
+  	width: 100%;
+  	padding: 2.5px;
+  	margin: 0px;
+  }
+
+  .datos.active{
+		display: block;
+		transition: 0.8s;
+	}
 
 }

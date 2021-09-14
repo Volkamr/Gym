@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GymProject</title>
+    <title>Nosotros</title>
     <link rel="stylesheet" type="text/css" href="../css/gym_chat.css">
 </head>
 
@@ -31,6 +31,16 @@
         <img src="../img/instalaciones_3.jpg" class="tres">
         <img src="../img/instalaciones_4.jpg" class="cuatro">
     </div>
+
+    <section>
+        <img src="../img/lugar_1.jpg" id="slider">
+        <ul class="navigation">
+            <li onclick="imgSlider('../img/lugar_1.jpg')"> <img src="../img/lugar_1.jpg"> </li>
+            <li onclick="imgSlider('../img/lugar_2.jpg')"> <img src="../img/lugar_2.jpg"> </li>
+            <li onclick="imgSlider('../img/lugar_3.jpg')"> <img src="../img/lugar_3.jpg"> </li>
+            <li onclick="imgSlider('../img/lugar_4.jpg')"> <img src="../img/lugar_4.jpg"> </li>
+        </ul>
+    </section>
 
 <div class="entrenadores">
     <h1>Entrenadores</h1>
@@ -85,6 +95,12 @@
         const finaltoggle = document.querySelector('.toggledos');
         finaltoggle.onclick = function(){
             final.classList.toggle('active');
+        }
+    </script>
+
+    <script type="text/javascript">
+        function imgSlider (nada) {
+            document.getElementById("slider").src = nada;
         }
     </script>
 

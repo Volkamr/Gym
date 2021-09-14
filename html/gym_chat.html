@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymProject</title>
+    <link rel="stylesheet" type="text/css" href="../css/gym_chat.css">
 </head>
-<!---vista principal -->
+
 <body>
     <div class="navegador">
         <ul>
-            <li> <a href="../index.html"> Home </a> </li>
+            <li> <a href="../index.html"> Home </a> <img src="../img/flecha_desplegable.png" class="toggle"> </li>
             <li> <a href="planes.html"> Planes </a> </li>
             <li> <a href="reservas.html"> Reservas </a> </li>
             <li> <a href="bioseguridad.html"> Bioseguridad </a> </li>
@@ -20,59 +20,74 @@
             <a href="login.html" class="boton"> Ingresar </a> </li>
         </ul>
     </div>
-<!-- imagenes instalaciones -->
-<div>
-    <h1>Instalaciones </h1>
-    <img src="../img/presentación_de_las_instalaciones.jpg" alt="instalacion 1">
-    <img src="../img/segunda_imagen_de_instalaciones.jpg" alt="instalacion 2">
-    <img src="../img/tercera_imagen_de_instalaciones.jpg" alt="instalacion 3">
-    <img src="../img/cuarta_imagen_instalaciones.jpg" alt='instalacion 4'>
-    
-</div>
 
-<!-- imagenes Entrenadores -->
-,<div>
+    <div class="UP">
+        <h1>Instalaciones </h1>
+    </div>
+
+    <div class="instalaciones">
+        <img src="../img/instalaciones_1.jpg" class="uno">
+        <img src="../img/instalaciones_2.jpg" class="dos">
+        <img src="../img/instalaciones_3.jpg" class="tres">
+        <img src="../img/instalaciones_4.jpg" class="cuatro">
+    </div>
+
+<div class="entrenadores">
     <h1>Entrenadores</h1>
-    <img src="../img/primer_entrenador_personal.jpg" alt="jotaro esteban">
-    <div name ="resumen correo y horario">
-     <ul>
-         <li><a href="#">sou bueno en..... etc</a> </li>
-         <li><a href="#">jotaro789@hotmail.com</a></li>
-         <li><a href="#">horario </a></li>
-
-         <img src="../img/segundo_entrenador_personal.jpg" alt="Mccartur">
-              <li><a href="#">sou bueno en..... etc</a> </li>
-              <li><a href="#">Maclovin@hotmail.com</a></li>
-              <li><a href="#">horario </a></li>
-        
-              <img src="../img/tercer_entrenador_personal.jpg" alt="Mcpickle">
-              <li><a href="#">sou bueno en..... etc</a> </li>
-              <li><a href="#">Macpickle45hotmail.com</a></li>
-              <li><a href="#">horario </a></li>   
-
-              <img src="../img/cuarta_entrenadora_personal.jpg" alt="Rosalia">
-              <li><a href="#">sou buena en..... etc</a> </li>
-              <li><a href="#">Rosalia@hotmail.com</a></li>
-              <li><a href="#">horario </a></li> 
-
-    </ul>
+    <div class="box">
+        <img src="../img/primer_entrenador.jpg" alt="jotaro esteban" class="img_entrenador">
+        <a href=""> Eugenio Ibarra </a>
+        <p> Eugenio.Ibarra@gmail.com </p>
+    </div>
+    <div class="box">
+        <img src="../img/segundo_entrenador.jpg" alt="jotaro esteban" class="img_entrenador">
+        <a href=""> Roser Segarra </a>
+        <p> Roser.Segarra@gmail.com </p>
+    </div>
+    <div class="box">
+        <img src="../img/tercer_entrenador.jpg" alt="jotaro esteban" class="img_entrenador">
+        <a href=""> Jose Torres </a>
+        <p> Jose.Torres@gmail.com </p>
+    </div>
 </div>
 
-<div class="datos">
+<div class="bottomUp">
+        <div>
+            <img src="../img/icono_perfil.png" class="toggledos"> 
+            <p> Contactos </p>
+        </div>  
+    </div>
+
+    <div class="datos">
         <div class="bottom">
         <ul>
-            <li> <img src="../img/icono_de_meme_chad.png" alt="Imagen_GigaChad" width="100px"> </li>
             <li> <img src="../img/icono_de_whatssapp.png" alt="Wh_icon" width="40px" class="contactos"> </li>
             <li> <p>########</p> </li>
             <li> <img src="../img/icono_de_email.png" alt="Email_Icon" width="40px" class="contactos"> </li>
             <li> <p>Correo@outlook.com</p> </li>
-            <a href="#"> <img src="../img/icono_de_facebook.png" alt="Facebook_Icon" width="50px" class="boton2"> </a> 
+            <a href="#"> <img src="../img/icono_de_facebook.png" alt="Facebook_Icon" width="50px" class="boton2"> </a>
             <a href="#"> <img src="../img/icono_instagram.png" alt="Instagram_Icon" width="50px" class="boton2"> </a> 
             <a href="#"> <img src="../img/icono_de_youtube.png" alt="YouTube_Icon" width="50px" class="boton2"> </a> 
         </ul>
         </div>
     </div>
 
-    </div>
+    <script type="text/javascript">
+        const card = document.querySelector('.navegador');
+        const cardtoggle = document.querySelector('.toggle');
+        cardtoggle.onclick = function(){
+            card.classList.toggle('active');
+        }
+    </script>
+
+    <script type="text/javascript">
+        const final = document.querySelector('.datos');
+        const finaltoggle = document.querySelector('.toggledos');
+        finaltoggle.onclick = function(){
+            final.classList.toggle('active');
+        }
+    </script>
+
+
 </body>
 </html>

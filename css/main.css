@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patrick+Hand&display=swap');
 
@@ -65,7 +64,7 @@ body{
 }
 
 
-@media only screen and (max-width: 1309px) {
+@media only screen and (max-width: 892px) {
   /* For mobile phones: */
   .navegador li{
     width: 100%;
@@ -86,7 +85,7 @@ body{
   }
 }
 
-@media only screen and (max-width: 1309px) {
+@media only screen and (max-width: 892px) {
   /* For mobile phones: */
   .navegador .boton{
     width: 87%;
@@ -373,17 +372,18 @@ body{
 	display: none;
 }
 
-.desplegable_down{
+.bottomUp p{
 	display: none;
 }
 
-@media only screen and (max-width:770px) {
+@media only screen and (max-width:718px) {
   /* For mobile phones: */
   .datos{
   	top: 0px;
     width: 100%;
     height: auto;
-	display: none;
+    display: none;
+    margin-top: 0px;
   }
 
   .bottom li{
@@ -415,35 +415,46 @@ body{
   	float: none;
   	margin-left: 40%;
   }
-	
+
 .toggledos{
   	float: left;
   	display: block;
   	width: 32px;
   	padding: 5px;
-  	margin-top: -2.6%;
+  	margin: 0px;
+  	margin-top: -1.3%;
+  	margin-left: 30%;
   	transition: 1s;
-  	margin-left: 28.5%;
-  	margin-right: 5%;
-  }
-
-  .desplegable_down{
-  	display: inline-block;
-  	text-align: left;
-  	font-size: 105%;
-  	width:90%;
-	font-family: 'Playfair Display', serif;
-  	color: black;
-  	padding: 5%;
-  	margin-top: 2.5%;
   }
 
   .bottomUp{
   	background-color:#d9ab57;
-  	width: 100%;
-	height: 80px;
-  	padding: 2.5px;
+  	width: 94%;
+  	padding: 3%;
   	margin: 0px;
+  }
+
+  .bottomUp div{
+  	align-content: center;
+  	width: 80%;
+  	height: 30px;
+  	padding: 2%;
+  	padding-left: 0px;
+  	padding-right: 0px;
+  	margin-left: 10%;
+  	margin-right: 10%;
+  }
+
+  .bottomUp p{
+  	font-family: 'Playfair Display', serif;
+  	display: inline-block;
+  	float: right;
+  	margin-right: 20%;
+  	margin-top: 1%;
+  	color: black;
+  	font-size: 100%;
+  	width: 30%;
+  	height: 30px;
   }
 
   .datos.active{

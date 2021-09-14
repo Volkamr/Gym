@@ -434,7 +434,7 @@ body{
 	.contenido{
 		width: 90%;
 		margin: 0px;
-		margin: 1.8%;
+		margin: 0.3%;
 		height: auto;
 		text-align: center;
 	}
@@ -456,6 +456,10 @@ body{
 
 	.Terminos{
 		width: 100%;
+	}
+
+	.ImgLateral{
+		margin: 2.1%;
 	}
 
 }

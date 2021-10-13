@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans+KR:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #fefae0;
+}
+
+.navegador ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+	background-color: #333;
+	overflow: hidden;
+	width: 99.58%;
+}
+
+.navegador li{
+	float: left;
+}
+
+.navegador li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.toggle{
+	width: 32px;
+	float: right;
+	margin-top: -30px;
+	margin-left: 5px;
+	display: none;
+}
+
+.navegador li a:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+.boton{
+	background-color: #d9ab57;
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	margin: 10px;
+	text-decoration: none;
+	border-radius: 2px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.boton:hover{
+	background-color: #e0d3c4;
+	color: black;
+	font-size: 16px;
+}
+
+
+@media only screen and (max-width: 892px) {
+  /* For mobile phones: */
+
+  .navegador li{
+    width: 100%;
+  }
+  .navegador{
+  	width: 99.59%;
+  	height: 80px;
+  	overflow: hidden;
+  }
+
+  .toggle{
+  	display: block;
+  	float: left;
+  	margin-left: 30%;
+  	padding: 6px;
+  	margin-top: -55.7px;
+  	transition: 0.8s;
+  }
+}
+
+@media only screen and (max-width: 892px) {
+  /* For mobile phones: */
+  .navegador .boton{
+    width: 87%;
+  }
+
+}
+
+.navegador.active{
+	height: auto;
+}
+
+
+.navegador.active .toggle{
+	transform: rotate(180deg);
+	transition: 0.8s;
+}
+
+picture{
+    display: block;
+    margin: 2% 5%;
+    padding: 2%;
+    width: 85%;
+}
+
+.principal{
+    border-radius: 30px;
+    width: 100%;
+    overflow: hidden;
+    height: 40%;
+}
+
+.versus{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 500px;
+    margin: 5%;
+}
+
+.descripcion{
+    background-color: #8ecae6;
+    border-radius: 10px;
+    padding: 6% 2%;
+    width: 20%;
+}
+
+.descripcion h1{
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.descripcion p{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.descripcion input{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    background-color: #023047;
+    padding: 1%;
+    border-radius: 30px;
+    opacity: 0.9;
+    margin-top: 10%;
+}
+
+.descripcion input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.visualizacion{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 2%;
+    width: 70%;
+    border-radius: 30px;
+}
+
+.pokemon1{
+    border-radius: 30px;
+    align-content: center;
+    padding: 3%;
+    position: relative;
+    transition: 0.6s;
+    transform: scale(0.9);
+}
+
+.pokemon1:hover{
+    transform: scale(1);
+    transition: 0.7s;
+}
+
+.pokemon1 img{
+    width: 300px;
+    margin-bottom: 5%;
+    transition: 0.6s;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+
+.pokemon1 p{
+    text-align: center;
+    padding: 2%;
+    background-color: #1b512d;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+.visualizacion h1{
+    width: 20%;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+
+.pokemon2{
+    border-radius: 30px;
+    align-content: center;
+    padding: 3%;
+    position: relative;
+    transition: 0.6s;
+    transform: scale(0.9);
+}
+
+.pokemon2:hover{
+    transform: scale(1);
+    transition: 0.7s;
+}
+
+.pokemon2 img{
+    width: 300px;
+    margin-bottom: 5%;
+    transition: 0.6s;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+.pokemon2 p{
+    text-align: center;
+    padding: 2%;
+    background-color: #1b512d;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+.teams{
+    margin: 0% 5%;
+}
+
+.descripciont h1{
+    background-color: #ffb703;
+    border-radius: 30px;
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 0px;
+}
+
+.descripciont p{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 2% 5%;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+.descripciont input{
+    width: 15%;
+    height: auto;
+    margin: 0% 5%;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    background-color: #023047;
+    padding: 0.5%;
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+.descripciont input:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.visualizaciont{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 3% 0%;
+}
+
+.visualizaciont img{
+    width: 200px;
+    margin: 1%;
+    transition: 0.6s;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 3%;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+.poke{
+    padding: 1%;
+    margin: 0.3%;
+    text-align: center;
+    width: 21%;
+    border-radius: 30px;
+    transition: 0.7s;
+}
+
+.poke h1{
+    text-align: center;
+    width: 92%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #1b512d;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    border-radius: 30px;
+}
+
+.poke p{
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    margin: 2%;
+    background-color: #1c7c54;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    border-radius: 30px;
+}
+
+.creditos{
+    background-color:#219ebc;
+    margin: 2% 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0px;
+}
+
+.descripcionp{
+    padding: 2%;
+    width: 45%;
+    height: auto;
+}
+
+.descripcionp h1{
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.descripcionp p{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.foto{
+    background-color: #023047;
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+.foto:hover{
+    background-image: url(../img/fondof.gif);
+    width: 200px;
+    height: 200px;
+    margin-top: -60px;
+    transition: 0.7s;
+}
+
+.foto img{
+    width: 95%;
+    margin-top: -13px;
+}
+
+.type{
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.t{
+    width: 40%;
+}
+
+.type2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.t2{
+    margin-top: 0px;
+    width: 44%;
+}
+
+.solo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0% 5%;
+}
+
+.lateral{
+    background-color: #1c7c54;
+    border-radius: 30px;
+    text-align: center;
+    width: 40%;
+    height: 320px;
+    padding: 2% 1%;
+}
+
+.solo img{
+    width: 300px;
+    margin-top: -60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    transition: 0.7s;
+}
+
+.solo img:hover{
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.solo h1{
+    background-color: #b1cf5f;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 0px;
+}
+
+.datos{
+    width: 40%;
+    padding: 2%;
+    margin: 3%;
+}
+
+.datos p{
+    background-color: #ffb703;
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.6s;
+    border-left: 0px solid #023047;
+}
+
+.datos p:hover{
+    border-left: 10px solid #023047;
+    transition: 0.7s;
+}
+
+@media only screen and (max-width: 1275px) {
+    .visualizaciont{
+        display: initial;
+        position: relative;
+    }
+    .poke{
+        float: left;
+        width: 40%;
+        margin: 5% 4%;
+    }
+    .solo{
+        float: left;
+        width: 90%;
+    }
+    .creditos{
+        float: right;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1137px){
+    .versus{
+        display: initial;
+    }
+    .descripcion{
+        margin: 2% 5%;
+        width: 86%;
+        height: 230px;
+    }
+    .descripcion input{
+        margin-top: 3%;
+    }
+    .descripcion h1{
+        text-align: center;
+    }
+    .visualizacion{
+        margin: 2% 5%;
+        width: 86%;
+    }
+}
+
+@media only screen and (max-width: 885px){
+    .solo{
+        width: 100%;
+        margin: 3% 0%;
+    }
+    .lateral{
+        width: 50%;
+    }
+    .datos{
+        width: 30%;
+        margin: 0%;
+    }
+}
+
+@media only screen and (max-width: 819px){
+    .visualizacion{
+        display: initial;
+        text-align: center;
+    }
+
+    .pokemon1{
+        width: 80%;
+        margin: 0% 7%;
+    }
+
+    .pokemon2{
+        width: 80%;
+        margin: 0% 7%;
+    }
+
+    .versus h1{
+        text-align: center;
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 723px){
+    .solo{
+        display: initial;
+        margin: 7% 5%;
+        margin-bottom: 3%;
+    }
+    .datos{
+        width: 83%;
+    }
+    .lateral{
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .poke{
+        width: 87%;
+    }
+    .creditos{
+        display: initial;
+    }
+    .descripcionp{
+        width: 100%;
+    }
+    .foto{
+        display: none;
+    }
+    .solo{
+        margin-top: 18%;
+    }
+    .descripcion{
+        height: 285px;
+    }
+}

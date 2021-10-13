@@ -100,5 +100,45 @@
         </div>
     </div>
 
+    <div class="solo">
+        <div class="lateral">
+            <img src="img/769px-Pokebola-pokeball-png-0.png" alt="" id="pokecomp" onclick="poketotal()">
+            <h1 id="nombre"> name </h1>
+        </div>
+        <div class="datos">
+            <p id="vida"> Hp </p>
+            <p id="ataque"> Attack </p>
+            <p id="defensa"> Defense </p>
+            <p id="ataque especial"> Special-Attack </p>
+            <p id="defensa especial"> Special-Defense </p>
+            <p id="velocidad" > Speed </p>
+        </div>
+    </div>
+
+    <div class="creditos">
+        <div class="descripcionp">
+            <h1> Juan Manuel Volkmar Padierna </h1>
+        </div>
+        <div class="foto">
+            <img src="img/foto.gif" alt="dittoconga">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+		const card = document.querySelector('.navegador');
+		const cardtoggle = document.querySelector('.toggle');
+		cardtoggle.onclick = function(){
+			card.classList.toggle('active');
+		}
+	</script>
+
+	<script type="text/javascript">
+		const final = document.querySelector('.datos');
+		const finaltoggle = document.querySelector('.toggledos');
+		finaltoggle.onclick = function(){
+			final.classList.toggle('active');
+		}
+	</script>
+
 </body>
 </html>
